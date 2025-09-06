@@ -1,0 +1,41 @@
+* {
+	background-image: none;
+}
+window {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+button {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 0;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	color: #FFFFFF;
+}
+
+button:focus, button:active, button:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #FFFFFF;
+	outline-style: none;
+	border-width: 2px;
+	border-color: #FFFFFF
+}
+
+#lock {
+    background-image: image(url("./lock.png"));
+}
+#suspend {
+    background-image: image(url("./suspend.png"));
+}
+
+#shutdown {
+    background-image: image(url("./shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("./reboot.png"));
+}
+

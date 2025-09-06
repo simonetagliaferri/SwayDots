@@ -1,0 +1,19 @@
+# The defaults below could be overridden in $XDG_CONFIG_HOME/swaylock/config
+#  (~/.config/swaylock/config).
+#
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+image=$HOME/Pictures/Wallpapers/Mountains.jpg
+scaling=fill
+font=JetBrainsMono Nerd Font
+inside-color=00000000
+ring-color=FFFFFF80
+inside-wrong-color=FF000099
+ring-wrong-color=FF000099
+inside-clear-color=FF9F0099
+ring-clear-color=FF9F0099
+inside-ver-color=00000000
+ring-ver-color=FFFFFF80
+key-hl-color=000000D9
+
+
