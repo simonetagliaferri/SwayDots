@@ -220,6 +220,28 @@ exec ~/.config/sway/idle.sh
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+# Reset, transform, and bind gesture coordinates to output geometry
+    bindsym $mod+Alt+down exec \
+    swaymsg output eDP-1 transform 0 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302" calibration_matrix 1 0 0 0 1 0 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302_Stylus" calibration_matrix 1 0 0 0 1 0
+
+    bindsym $mod+Alt+right exec \
+    swaymsg output eDP-1 transform 90 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302" map_to_output eDP-1 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302_Stylus" calibration_matrix '0 1 0 -1 0 1'
+
+    bindsym $mod+Alt+up exec \
+    swaymsg output eDP-1 transform 180 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302" map_to_output eDP-1 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302_Stylus" calibration_matrix '-1 0 1 0 -1 1'
+
+    bindsym $mod+Alt+left exec \
+    swaymsg output eDP-1 transform 270 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302" map_to_output eDP-1 && \
+    swaymsg input "1267:17154:ELAN2513:00_04F3:4302_Stylus" calibration_matrix '0 -1 1 1 0 0'
+
 #
 # Scratchpad:
 #
